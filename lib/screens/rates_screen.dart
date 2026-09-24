@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
 import '../models/rates.dart';
+import '../services/background_refresh.dart';
 import '../services/rates_repository.dart';
 
 class RatesScreen extends StatefulWidget {
@@ -31,7 +32,7 @@ class _RatesScreenState extends State<RatesScreen> {
 
   Future<void> _refresh() async {
     setState(() => _loading = true);
-    final results = await widget.repository.refresh();
+    final results = await refreshAndPublish(widget.repository);
     if (!mounted) return;
     setState(() {
       _results = results;

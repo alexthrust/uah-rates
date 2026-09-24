@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
 
 import 'screens/rates_screen.dart';
+import 'services/background_refresh.dart';
 import 'services/rates_repository.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(UahRatesApp(repository: RatesRepository()));
+  try {
+    await setUpBackgroundRefresh();
+  } catch (e) {
+    debugPrint('Background refresh setup failed: $e');
+  }
 }
 
 class UahRatesApp extends StatelessWidget {

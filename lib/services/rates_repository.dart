@@ -16,6 +16,7 @@ class RatesRepository {
 
   Future<List<SourceResult>> loadCached() async {
     final prefs = await SharedPreferences.getInstance();
+    await prefs.reload();
     return [
       for (final source in RateSource.values)
         SourceResult(source: source, data: _readCache(prefs, source)),

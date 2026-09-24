@@ -38,6 +38,8 @@ dependencies:
   html: ^0.15.7
   shared_preferences: ^2.5.5
   intl: ^0.20.3
+  home_widget: ^0.10.0
+  workmanager: ^0.10.10
 
 dev_dependencies:
   flutter_test:
