@@ -3,8 +3,13 @@ package com.alexeyb.uah_rates
 import android.appwidget.AppWidgetManager
 import android.content.Context
 import android.content.SharedPreferences
+import android.graphics.Typeface
 import android.net.Uri
 import android.os.Build
+import android.text.SpannableStringBuilder
+import android.text.Spanned
+import android.text.style.RelativeSizeSpan
+import android.text.style.StyleSpan
 import android.util.SizeF
 import android.widget.RemoteViews
 import es.antonborri.home_widget.HomeWidgetBackgroundIntent
@@ -23,7 +28,7 @@ class RatesWidgetProvider : HomeWidgetProvider() {
             RemoteViews(
                 mapOf(
                     SizeF(100f, 60f) to buildViews(context, widgetData, compact = true),
-                    SizeF(220f, 100f) to buildViews(context, widgetData, compact = false),
+                    SizeF(230f, 110f) to buildViews(context, widgetData, compact = false),
                 )
             )
         } else {
@@ -41,10 +46,12 @@ class RatesWidgetProvider : HomeWidgetProvider() {
         val fields = if (compact) USD_FIELDS else USD_FIELDS + EUR_FIELDS
 
         return RemoteViews(context.packageName, layout).apply {
-            fields.forEach { (viewId, key) -> setTextViewText(viewId, data.getString(key, "—")) }
+            fields.forEach { (viewId, key) ->
+                setTextViewText(viewId, styleRate(data.getString(key, null)))
+            }
             setTextViewText(R.id.updated, data.getString("updated", ""))
             setOnClickPendingIntent(
-                R.id.widget_root,
+                android.R.id.background,
                 HomeWidgetLaunchIntent.getActivity(context, MainActivity::class.java),
             )
             if (!compact) {
@@ -55,6 +62,21 @@ class RatesWidgetProvider : HomeWidgetProvider() {
             }
         }
     }
+
+    private fun styleRate(value: String?): CharSequence {
+        if (value.isNullOrBlank()) return "—"
+        val parts = value.split('/')
+        if (parts.size != 2) return bold(value)
+
+        return SpannableStringBuilder().apply {
+            append(parts[0], RelativeSizeSpan(0.85f), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+            append("  ")
+            append(bold(parts[1]))
+        }
+    }
+
+    private fun bold(text: String): CharSequence =
+        SpannableStringBuilder().append(text, StyleSpan(Typeface.BOLD), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
 
     private companion object {
         val USD_FIELDS = listOf(

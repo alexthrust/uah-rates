@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="widget_background">#F2202124</color>
-    <color name="widget_text">#E8EAED</color>
-    <color name="widget_muted">#9AA0A6</color>
-    <color name="widget_accent">#4DB6AC</color>
+    <color name="widget_background">#FF0F1514</color>
+    <color name="widget_row">#FF1B2322</color>
+    <color name="widget_row_accent">#FF0F3B36</color>
+    <color name="widget_text">#FFDEE4E2</color>
+    <color name="widget_muted">#FF9CA8A5</color>
+    <color name="widget_accent">#FF6BD5C6</color>
+    <color name="widget_on_accent">#FF00201C</color>
 </resources>

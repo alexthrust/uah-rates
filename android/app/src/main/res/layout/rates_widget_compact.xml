@@ -1,65 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/widget_root"
+    android:id="@android:id/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/widget_background"
+    android:clipToOutline="true"
     android:orientation="vertical"
-    android:paddingStart="12dp"
-    android:paddingTop="8dp"
-    android:paddingEnd="12dp"
-    android:paddingBottom="8dp">
+    android:padding="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="USD"
+            android:text="🇺🇸 USD"
             android:textColor="@color/widget_text"
-            android:textSize="12sp"
+            android:textSize="13sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/updated"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFeatureSettings="tnum"
             android:textColor="@color/widget_muted"
             android:textSize="11sp" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
+        style="@style/WidgetRow"
+        android:background="@drawable/widget_row_accent">
 
         <TextView style="@style/WidgetLabel" android:text="NBU" />
         <TextView android:id="@+id/nbu_usd" style="@style/WidgetValue" android:layout_weight="2" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
+    <LinearLayout style="@style/WidgetRow">
 
         <TextView style="@style/WidgetLabel" android:text="Rulya" />
         <TextView android:id="@+id/rulya_usd" style="@style/WidgetValue" android:layout_weight="2" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
+    <LinearLayout style="@style/WidgetRow">
 
         <TextView style="@style/WidgetLabel" android:text="Lion" />
         <TextView android:id="@+id/lion_usd" style="@style/WidgetValue" android:layout_weight="2" />

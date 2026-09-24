@@ -40,7 +40,9 @@ dependencies:
   intl: ^0.20.3
   home_widget: ^0.10.0
   workmanager: ^0.10.10
+  dynamic_color: ^2.1.0
 
+  material_ui: 1.4.0
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -1,83 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/widget_root"
+    android:id="@android:id/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/widget_background"
+    android:clipToOutline="true"
     android:orientation="vertical"
-    android:paddingStart="14dp"
-    android:paddingTop="10dp"
-    android:paddingEnd="14dp"
-    android:paddingBottom="8dp">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-        <TextView style="@style/WidgetLabel" android:text="" />
-        <TextView style="@style/WidgetHeader" android:text="USD" />
-        <TextView style="@style/WidgetHeader" android:text="EUR" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-        <TextView style="@style/WidgetLabel" android:text="NBU" />
-        <TextView android:id="@+id/nbu_usd" style="@style/WidgetValue" />
-        <TextView android:id="@+id/nbu_eur" style="@style/WidgetValue" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-        <TextView style="@style/WidgetLabel" android:text="Rulya" />
-        <TextView android:id="@+id/rulya_usd" style="@style/WidgetValue" />
-        <TextView android:id="@+id/rulya_eur" style="@style/WidgetValue" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-        <TextView style="@style/WidgetLabel" android:text="Lion" />
-        <TextView android:id="@+id/lion_usd" style="@style/WidgetValue" />
-        <TextView android:id="@+id/lion_eur" style="@style/WidgetValue" />
-    </LinearLayout>
+    android:padding="12dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingStart="4dp">
+
+        <TextView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:background="@drawable/widget_badge"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="₴"
+            android:textColor="@color/widget_on_accent"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="UAH Rates"
+            android:textColor="@color/widget_text"
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/updated"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:fontFeatureSettings="tnum"
+            android:text="16:12"
             android:textColor="@color/widget_muted"
             android:textSize="11sp" />
 
         <ImageView
             android:id="@+id/refresh"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="2dp"
             android:contentDescription="Refresh"
-            android:padding="4dp"
+            android:padding="6dp"
             android:src="@drawable/ic_widget_refresh" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp">
+
+        <TextView style="@style/WidgetLabel" android:text="" />
+        <TextView style="@style/WidgetColumnHeader" android:text="🇺🇸 USD" />
+        <TextView style="@style/WidgetColumnHeader" android:text="🇪🇺 EUR" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/WidgetRow"
+        android:background="@drawable/widget_row_accent">
+
+        <TextView style="@style/WidgetLabel" android:text="NBU" />
+        <TextView android:id="@+id/nbu_usd" style="@style/WidgetValue" android:text="44.97" />
+        <TextView android:id="@+id/nbu_eur" style="@style/WidgetValue" android:text="51.12" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/WidgetRow">
+
+        <TextView style="@style/WidgetLabel" android:text="Rulya" />
+        <TextView android:id="@+id/rulya_usd" style="@style/WidgetValue" android:text="44.60 45.40" />
+        <TextView android:id="@+id/rulya_eur" style="@style/WidgetValue" android:text="51.00 51.80" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/WidgetRow">
+
+        <TextView style="@style/WidgetLabel" android:text="Lion" />
+        <TextView android:id="@+id/lion_usd" style="@style/WidgetValue" android:text="44.70 45.50" />
+        <TextView android:id="@+id/lion_eur" style="@style/WidgetValue" android:text="51.00 51.80" />
     </LinearLayout>
 </LinearLayout>
