@@ -1,0 +1,632 @@
+﻿<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>Курс валют Рівне сьогодні - обмін валют Рівне | LION-KURS</title>
+<meta name="description" content="Обмін валют Рівне цілодобово ☑ курс долара $, курс євро €, курс злотого zł, та інші №➀  вигідний обмін валют у Рівному. ☎: 098-106-61-35.">
+<meta name="Keywords" content="курс валют рівне, обмін валют рівне, долар, євро, рівне, цілодобово, обмінники, сьогодні"> 
+<link rel="shortcut icon" href="image/slogo.ico" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="googlebot" content="NOODP" />
+<meta name="publisher" content="Lion-kurs"/>
+<meta name="author" content="Lion-kurs"/>
+<meta name="copyright" content="Lion-kurs" />
+<meta name="revisit-after" content="2 days" />
+<meta name="Cache-Control" content="no-cache, must-revalidate"/>
+
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        /* ========== BASE STYLES ========== */
+        body {
+            background-color: #0057b8;
+            font-size: 12pt;
+            font-family: Helvetica, sans-serif;
+            margin: auto;
+        }
+
+
+
+        a, a:hover {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        h1, .text-nav {
+            min-width: 300px;
+            width: 100%;
+            text-align: center;
+            font-size: 250%;
+            font-weight: 900;
+            color: white;
+            white-space: nowrap;
+            padding: 0;
+            margin: 0;
+            line-height: 0.7em;
+        }
+
+        .date {
+            width: 100%;
+            text-align: center;
+            font-size: 200%;
+            color: white;
+            padding: 0;
+            margin: 0;
+        }
+
+        table {
+            font-size: 100%;
+            width: 98%;
+            margin: 0;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        th {
+            text-align: center;
+            font-size: 100%;
+            color: white;
+        }
+
+        td {
+            text-align: center;
+            font-size: 150%;
+            padding: 0;
+            margin: 0;
+        }
+
+        tr {
+            height: 50px;
+        }
+
+        .valuta {
+            margin: 0;
+            padding: 0;
+            line-height: 0.2em;
+            border: 4px;
+        }
+
+        .content {
+            width: 100%;
+            display: flex;
+            justify-content: center; /* по горизонтали */
+            align-items: center;     /* по вертикали */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .content table {
+            margin: 0 auto;
+            width: auto;
+        }
+
+        .white {
+            font-size: 300%;
+            line-height: 0.8em;
+            font-weight: 700;
+            color: red;
+            background-color: white;
+        }
+
+        .subval {
+            font-size: 80%;
+            line-height: 0.8em;
+            color: rgb(26, 49, 129);
+        }
+
+        .contact {
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+            color: white;
+            font-size: 300%;
+            text-align: center;
+        }
+
+        .ital {
+            font-weight: 700;
+            font-style: italic;
+            width: 100%;
+            font-size: 200%;
+            color: white;
+            text-align: center;
+        }
+
+        .footer {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        /* ========== LOGO STYLES ========== */
+        .logo, .logo2 {
+            width: 100%;
+            background-color: white;
+            text-align: center;
+            min-width: 300px;
+            font-size: 350%;
+            font-weight: 100;
+            color: red;
+            white-space: nowrap;
+        }
+
+        .logo h1 {
+            box-sizing: border-box;
+            width: 100%;
+            height: auto;
+            padding: 15px 0;
+            color: red;
+            font-size: clamp(36px, 12vw, 68px);
+            line-height: 1.1;
+            text-align: center;
+            margin: 25px auto 5px auto;
+            white-space: nowrap;
+        }
+
+        /* ========== TELEGRAM BUTTON ========== */
+        .telegram-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            background-color: #003d7a;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            width: 260px;
+            height: 60px;
+            border-radius: 10px;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: background-color 0.3s ease;
+            padding: 0;
+        }
+
+        .telegram-button img,
+        .telegram-logo {
+            width: 60px;
+            height: 60px;
+        }
+
+        .telegram-link {
+            text-decoration: none;
+            color: inherit;
+            width: 100%;
+            max-width: 450px;
+            display: block;
+        }
+
+        .telegram-link-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* ========== ANIMATED BUTTON ========== */
+        .animated-button {
+            margin-top: 20px;
+            padding: 12px 30px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #003d7a;
+            background: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .animated-button:hover {
+            transform: scale(1.1);
+        }
+
+        /* ========== CONTAINER AND COLUMN ========== */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+        }
+
+        .bottom-column {
+            background: #003d7a;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            order: 1;
+        }
+
+        .bottom-column h2 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* ========== RESPONSIVE STYLES ========== */
+        @media all and (max-width: 840px) {
+            h1, .text-nav {
+                font-size: 150%;
+                line-height: 1.2em;
+            }
+
+            .date {
+                font-size: 200%;
+            }
+
+            .white {
+                font-size: 300%;
+            }
+
+            .subval {
+                font-size: 50%;
+            }
+
+            .contact, .ital {
+                font-size: 200%;
+                line-height: 1em;
+            }
+
+            .logo h1 {
+                margin-top: 0;
+            }
+
+            .logo {
+
+                height: 420px;
+            }
+
+            .logo2 {
+                height: 130px;
+                font-weight: bold;
+            }
+
+            .telegram-button {
+                width: 200px;
+                height: 50px;
+                font-size: 16px;
+                gap: 10px;
+            }
+
+            .telegram-button img,
+            .telegram-logo {
+                width: 45px;
+                height: 45px;
+            }
+
+            .telegram-link-content {
+                gap: 12px;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .bottom-column {
+                margin: 15px;
+                height: 90px;
+                padding: 20px;
+                border-radius: 8px;
+                font-size: 16px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .bottom-column h2 {
+                font-size: 20px;
+                text-align: left;
+                margin: 0;
+            }
+
+            .animated-button {
+                width: 100%;
+                padding: 10px 0;
+                font-size: 16px;
+            }
+
+            .container-fluid, .row {
+                width: 95%;
+            }
+            .content {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+            }
+
+            .content table {
+                width: 100%;
+                font-size: 14px;
+            }
+        }
+    </style>
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153450226-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-153450226-1');
+		</script>
+
+</head>
+<body>
+<center>
+    <div class="logo">
+        <h1>ОБМІН ВАЛЮТ</h1>
+        <div class="container">
+            <div class="bottom-column">
+                <a href="https://t.me/RIVNE_LION_KURS_OPT" target="_blank" class="telegram-link">
+                    <div class="telegram-link-content">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" class="telegram-logo">
+                        <div><h2>Оптові курси у Telegram</h2></div>
+                    </div>
+                    <button class="animated-button">Перейти на канал</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Ссылка для звонка -->
+        <a href="tel:+380981066135" title="Натисніть щоб зробити дзвінок"
+           onclick="gtag('event', 'call', {'event_category': 'button-top', 'event_action': 'call'});"
+           rel="nofollow" style="color:black; font-size: 40px;">
+            +38 098 106 61 35
+        </a>
+
+        <br>
+
+        <!-- Центрированные иконки с отступами -->
+        <div style="display: flex; justify-content: center; gap: 30px; align-items: center; margin-top: 15px">
+            <a href="tel:+380981066135">
+                <img src="image/phne.png" width="50" height="50" alt="телефон">
+            </a>
+            <a href="https://t.me/+380981066135">
+                <img src="image/legram.png" width="50" height="50" alt="телеграмм">
+            </a>
+            <a href="viber://chat?number=%2B380981066135">
+                <img src="image/viiber.png" width="50" height="50" alt="viber">
+            </a>
+            <a href="https://wa.me/380981066135">
+                <img src="image/lgo.png" width="50" height="50" alt="ватсап">
+            </a>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="text-nav" style="margin-bottom: 20px; margin-top: 20px">
+			<h1>ОБМІН ВАЛЮТ<div class=date style="font-size:70%;"></div></h1>
+    </div>
+	
+<div class=date>
+	
+</div>	
+
+
+<div class=date>
+	 24.09.2026</div>
+<div class="content">
+	<table align=center border=0>
+		<tr>
+			<th>КУПІВЛЯ</th>
+			<th></th>
+			<th>ПРОДАЖ</th>
+			
+		</tr>
+		<tr>
+			<td class="white">44.70</td>
+			<td class="valuta"><img src="image/usd.gif" alt="курс долара США" title="курс долара США"></td>
+			<td class="white">45.50</td>
+		</tr>
+		<tr>
+			<td class="white">51.00</td>
+			<td class="valuta"><img src="image/eur.gif" alt="курс євро в Рівному" title="курс євро в Рівному"></td>
+			<td class="white">51.80</td>
+		</tr>
+		<tr>
+			<td class="white">11.50</td>
+			<td class="valuta"><img src="image/pol.gif" alt="курс польська злота" title="курс польська злота"></td>
+			<td class="white">11.80</td>
+		</tr>
+		<tr>
+			<td class="white">59.40</td>
+			<td class="valuta"><img src="image/funt.gif" alt="курс англійський фунт" title="курс англійський фунт"></td>
+			<td class="white">60.00</td>
+		</tr>
+		<tr>
+			<td class="white">2.070</td>
+			<td class="valuta"><img src="image/czk.gif" alt="Чеська крона" title="Чеська крона"></td>
+			<td class="white">2.110</td>
+		</tr>
+				<tr>
+			<td class="white">31.20</td>
+			<td class="valuta"><img src="image/knd.gif" alt="Канадський долар" title="Канадський долар"></td>
+			<td class="white">31.90</td>
+		</tr>
+				<tr>
+			<td class="white">54.70</td>
+			<td class="valuta"><img src="image/swe.gif" alt="Швейцарський франк" title="Швейцарський франк"></td>
+			<td class="white">55.30</td>
+		</tr>
+				<tr>
+			<td class="white">4.000</td>
+			<td class="valuta"><img src="image/chf.png" alt="курс шведської крони в Рівному" title="курс шведської крони в Рівному"></td>
+			<td class="white">4.300</td>
+		</tr>
+        <tr>
+            <th></th>
+            <th>КРОС-КУРС</th>
+            <th></th>
+        </tr>
+        <tr>
+			<td class="white">1.1450</td>
+			<td class="valuta" style="
+			color:white; padding-top: 27px;
+    padding-bottom: 27px;
+	border-bottom-width: 2px;
+    border-bottom-style: solid; 	
+    border-bottom-color: white;
+	border-top-width: 2px;
+    border-top-style: solid; 	
+    border-top-color: white;
+	"><b>EUR/USD</b></td>
+			<td class="white">1.1500</td>
+		</tr>
+				<tr>
+			<td class="white">3.860</td>
+			<td class="valuta" style="
+			color:white; padding-top: 27px;
+    padding-bottom: 27px;
+	border-bottom-width: 2px;
+    border-bottom-style: solid; 	
+    border-bottom-color: white;
+
+	"><b>PLN/USD</b></td>
+			<td class="white">3.825</td>
+		</tr>
+        <tr>
+			<td class="white">21.70</td>
+			<td class="valuta" style="
+			color:white; padding-top: 27px;
+    padding-bottom: 27px;
+	border-bottom-width: 2px;
+    border-bottom-style: solid; 	
+    border-bottom-color: white;
+
+	"><b>CZK/USD</b></td>
+			<td class="white">21.40</td>
+		</tr>
+        <tr>
+            <td class="white">1.320</td>
+            <td class="valuta" style="
+			color:white; padding-top: 27px;
+    padding-bottom: 27px;
+	border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+
+	"><b>GBP/USD</b></td>
+            <td class="white">1.340</td>
+        </tr>
+        <tr>
+            <td class="white">1.220</td>
+            <td class="valuta" style="
+			color:white; padding-top: 27px;
+    padding-bottom: 27px;
+	border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+
+	"><b>CHF/USD</b></td>
+            <td class="white">1.235</td>
+        </tr>
+        <tr>
+            <td class="white">1.430</td>
+            <td class="valuta" style="
+			color:white; padding-top: 27px;
+    padding-bottom: 27px;
+	border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+
+	"><b>CAD/USD</b></td>
+            <td class="white">1.400</td>
+        </tr>
+	</table>
+</div>
+
+
+<div class="contact">
+<a href="tel:+380981066135" title="Натисніть щоб зробити дзвінок" onclick="gtag('event', 'call', {'event_category': 'button', 'event_action': 'call'});" rel="nofollow">+38 098 106 61 35</a>
+</div>
+
+ <div class="ital">
+</div>
+<div class = "container-fluid">
+ <div class = "row">
+ <div class = "col-md-12">
+
+</div>
+ </div>
+  </div>
+ 
+<div class = "container-fluid">
+<div class = "row">
+ <div class = "col-md-12">
+ <iframe src="
+https://ru.investingwidgets.com/
+live-currency-cross-rates?theme=lightTheme
+&roundedCorners=true&cols=bid,ask,last,change,changePerc
+&pairs=1,3,2,4,7,5,6,10,12,42,155,46,1691,940809,40,2186"
+ width="100%"
+height="650" 
+ allowtransparency="true" 
+ marginwidth="0" 
+ marginheight="0">
+ </iframe>
+ <b><h2 style="font-size : 20px; font-family : Arial; bold; color:white">Співвідношення USD/EUR</h2><b><br>
+
+<iframe height="355" width="100%" 
+src="https://sslcharts.forexprostools.com/index.php?force_lang=7&pair_ID=1&timescale=300&candles=50&style=line" rel="nofollow"></iframe>
+		<b><h2 style="font-size : 20px; font-family : Arial; bold; color:white">Співвідношення USD/PLN</h2><b><br>
+
+<iframe height="355" width="100%" src="https://sslcharts.forexprostools.com/index.php?force_lang=7&pair_ID=40&timescale=300&candles=50&style=line"></iframe><br />
+
+</div>
+ </div>
+  </div>
+  
+  
+
+<br>11221</center>
+	  <div class="logo2">
+	    
+			LION-KURS<br/>
+
+<span style="font-size:70%;">☞</span><a href="tel:+380981066135" title="Натисніть щоб зробити дзвінок" onclick="gtag('event', 'call', {'event_category': 'button-down', 'event_action': 'call'});" rel="nofollow" style="color:black; font-size:60%;">+38 098 106 61 35</a><span style="font-size:70%;">☜</span>
+
+	  </div>
+
+
+<h2 dir="ltr" style="text-align: center;">Курс валют Рівне: щодня актуальна інформація</h2>
+<p dir="ltr" style="text-align: justify; margin-left:25px; margin-right:25px;">Курс обміну валюти в банках і обмінних пунктах змінюється протягом дня і залежить від новин на фінансовому ринку, а також від котирувань валют. На нашому сайті lion-kurs.rv.ua ви знайдете повну інформацію про найбільш вигідний курс валют Рівне (долар, євро, злотий та ін.). Порівняйте показники покупка / продаж валюти, котра Вас цікавить. У нас максимально актуальна інформація, котра може змінюватись навіть декілька разів на добу. Для максимальної зручності постійно в доступі інформація про коливання валюти, зміцнення чи знецінення гривні.</p>
+<h2 dir="ltr" style="text-align: center;">Обмін валют Рівне</h2>
+<p dir="ltr" style="text-align: justify; margin-left:25px; margin-right:25px;">Пропонуємо також послугу обмін валют (Рівне) по найбільш вигідному курсу. Ми живемо в 21 столітті і час, коли Вам необхідно було об&rsquo;їхати всі обмінні пункти Рівного чи відділення банку, щоб знайти найбільш вигідний курс, давно по заду. Сьогодні вся інформація доступна онлайн на нашому сайті.</p>
+<p dir="ltr" style="text-align: justify; margin-left:25px; margin-right:25px;"><em><strong>Основні переваги сервісу по обміну валют від LION-KURS:</strong></em></p>
+<ul>
+<li dir="ltr" role="presentation">надійність;</li>
+<li dir="ltr" role="presentation">швидкий доступ до інформації;</li>
+<li dir="ltr" role="presentation">завжди актуальна інформація;</li>
+<li dir="ltr" role="presentation">конфіденційність.</li>
+</ul>
+<p dir="ltr" style="text-align: justify; margin-left:25px; margin-right:25px;">Також пропонуємо обмін валют Рівне цілодобово. Банки працюють з <strong>09:00 до 18:00</strong>, пункти обміну також мають обмежений графік. До нас ж Ви можете звернутись в будь-який час і ми з радістю здійснимо будь-яку операцію.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p dir="ltr" style="text-align: center; margin-left:25px; margin-right:25px;"><br>© 2026 - курс валют Рівне. Обмін валют в Рівному цілодобово по вигідному курсу.</p>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://lion-kurs.rv.ua/","name":"Головна"}},{"@type":"ListItem","position":2,"item":{"@id":"https://lion-kurs.rv.ua/","name":"Курс валют 📈"}},{"@type":"ListItem","position":3,"item":{"@id":"https://lion-kurs.rv.ua/","name":"Курс валют Рівне"}}]}</script>
+</body>
